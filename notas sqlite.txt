@@ -1,0 +1,11 @@
+si no existe la .db la crea en el python
+bd = sqlite3.connect(.db)
+cursor = bd.cursor()
+cursor.execute(insert)
+bd.commit() <- guardar los cambios
+
+tupla = [(sarasa),(sarasa)] <- agrega tupla
+
+cursor.executemany("insert sarasa .... (?,?)",tupla)
+cursor.fetchall() <- obtiene todos los registros en forma de lista, una variante a for
+
